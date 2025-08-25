@@ -17,12 +17,15 @@ It extracts company details, processes inputs, and leverages AI/LLMs to create t
 
 ## 📂 Project Structure
 app/
-├── main.py # Entry point
-├── email_generator.py # Core logic for email generation
-├── scraper.py # Web scraping module
-├── templates/ # For HTML templates if using Flask
-├── static/ # CSS/JS files if required
-└── README.md # Project documentation
+├── pycache/ # Cached Python files
+├── resource/ # Portfolio CSV and other resources
+│ └── my_portfolio.csv
+├── vectorstore/ # Local ChromaDB vector database
+├── .env # Environment variables (API keys etc.)
+├── chains.py # LLM chain logic
+├── main.py # Streamlit entry point
+├── portfolio.py # Portfolio loading & querying
+└── utils.py # Utility functions
 
 yaml
 Copy
@@ -62,15 +65,7 @@ python main.py
 🤝 Contributing
 Contributions are welcome! Please fork this repo and create a pull request for any enhancements.
 
-📄 License
-This project is licensed under the MIT License.
 
 👨‍💻 Author
 Sumeet Jadhav
 https://www.linkedin.com/in/sumeet-jadhav-34bb53220/
-
-
-
-Sumeet Jadhav
-📧 [Your Email]
-🔗 [LinkedIn/GitHub Profile]
